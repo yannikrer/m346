@@ -5,14 +5,14 @@
 
 2. **Überprüfung der Ressourcen des Host-Systems:**
    - Host-System hat 12 logische Prozessoren und 16 GB RAM.
-   - ![Bild Arbeitsspeicher](ram.png){ width=200px }
-   - ![Bild Prozessor](cpu.png){ width=200px }
+   - ![Bild Arbeitsspeicher](ram.png)
+   - ![Bild Prozessor](cpu.png)
 
 3. **Erstellen und Konfigurieren der VM:**
    - VM erstellt mit Ubuntu.
    - Versuch, 20 Prozessoren zuzuweisen und 20 GB RAM.
-   - ![Fehlermeldung CPU](prozessorfm.png){ width=200px }
-   - ![Fehlermeldung RAM](ramfm.png){ width=200px }
+   - ![Fehlermeldung CPU](prozessorfm.png)
+   - ![Fehlermeldung RAM](ramfm.png)
 
 4. **Erklärung:**
    - **Fehlermeldung bei CPU-Zuweisung:** "Nicht genug logische Prozessoren."
