@@ -4,13 +4,13 @@
    - Unsere Vermutung: Wir verwenden VMware Workstation, also einen Hypervisor Typ 2.
 
 2. **Überprüfung der Ressourcen des Host-Systems:**
-   - Host-System hat 4 logische Prozessoren und 8 GB RAM.
-   - ![Befehl lscpu](ram.png)
-   - ![Befehl free -h](cpu.png)
+   - Host-System hat 12 logische Prozessoren und 16 GB RAM.
+   - ![Bild Arbeitsspeicher](ram.png)
+   - ![Bild Prozessor](cpu.png)
 
 3. **Erstellen und Konfigurieren der VM:**
    - VM erstellt mit Ubuntu.
-   - Versuch, 6 Prozessoren zuzuweisen und 10 GB RAM.
+   - Versuch, 20 Prozessoren zuzuweisen und 20 GB RAM.
    - ![Fehlermeldung CPU](prozessorfm.png)
    - ![Fehlermeldung RAM](ramfm.png)
 
