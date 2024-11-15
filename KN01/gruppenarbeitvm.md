@@ -5,14 +5,14 @@
 
 2. **Überprüfung der Ressourcen des Host-Systems:**
    - Host-System hat 4 logische Prozessoren und 8 GB RAM.
-   - ![Befehl lscpu](ram.pngpng)
-   - ![Befehl free -h](cpu.pngpng)
+   - ![Befehl lscpu](ram.png)
+   - ![Befehl free -h](cpu.png)
 
 3. **Erstellen und Konfigurieren der VM:**
    - VM erstellt mit Ubuntu.
    - Versuch, 6 Prozessoren zuzuweisen und 10 GB RAM.
-   - ![Fehlermeldung CPU](prozessorfm.png.png)
-   - ![Fehlermeldung RAM](ramfm.png.png)
+   - ![Fehlermeldung CPU](prozessorfm.png)
+   - ![Fehlermeldung RAM](ramfm.png)
 
 4. **Erklärung:**
    - **Fehlermeldung bei CPU-Zuweisung:** "Nicht genug logische Prozessoren."
