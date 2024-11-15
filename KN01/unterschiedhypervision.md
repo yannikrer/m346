@@ -1,5 +1,4 @@
-## A) Hypervisor Typ 1 und Typ 2 (30%)
-
+## Hypervisor Typ 1 und Typ 2 
 ### Hypervisor Definition
 
 Ein **Hypervisor**, auch als Virtual Machine Monitor (VMM) bekannt, ist eine Software, Firmware oder Hardware, die virtuelle Maschinen (VMs) erstellt und ausführt. Ein Hypervisor ermöglicht es mehreren Betriebssystemen, gleichzeitig auf einem einzigen physischen Computer (Host) zu laufen, indem er die Hardware-Ressourcen wie CPU, RAM und Speicherplatz auf die VMs aufteilt.
