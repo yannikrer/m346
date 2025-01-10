@@ -1,0 +1,32 @@
+#cloud-config
+# Diese Datei ist eine Cloud-Init Konfigurationsdatei, die zur Initialisierung von Cloud-Instanzen genutzt wird.
+
+users:
+  - name: ubuntu
+    # Erstelle einen Benutzer mit dem Namen "ubuntu".
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    # Erlaubt dem Benutzer "ubuntu", sudo-Befehle ohne Passwort-Eingabe auszuführen.
+    groups: users, admin
+    # Fügt den Benutzer den Gruppen "users" und "admin" hinzu.
+    home: /home/ubuntu
+    # Legt das Home-Verzeichnis des Benutzers auf "/home/ubuntu" fest.
+    shell: /bin/bash
+    # Setzt die Standard-Shell des Benutzers auf /bin/bash.
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDyWyGTDzzqq9YjuMqsrcXRMhZVrCbD+cnL2YLpTLbTli2jXcX6mISWVzrPQWEkF5OPWCVtWpUpyEgjwe7m7E5zvpI0bGiPrdzrPmO5SMhFI0gRJK5VdJEVl59XColb4ueqh3cwvpbX2kMV8fq04WY+So8mGFlZ+EB+SdvWkgdzde0KOoX8pZQje/rD6GpHF9Jjul075D1kmlS4aUlUmGkM3c6Z5j/phLjyTRayKOD/dZyTEVSGZaS9csd3Qu/b98qoH9VpvG7+ri+RNMh3IYkIpORJjhlCxxvb6uTR89WcvNT94kNBA0GUECQkguElLjx9WSR0RwimfOv4b+Ewj/sX tbz_aws_atilgan aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+Tz+calBzx03LOw/iENpR8wlGWpAWtKAteRd9ePzZ5BnnMfJ4RDaeKkiLanF2V2b5oCJZvjYqzeVtzDF0qaNCmowIX955hNL4JkTMSNU1T5Mxkqj8GQKh++XLNjral5uPUdmEDA+nlMzSUKbNI2p9EW7SC2U3K6mmbhhnstRnzOGuBb9OTlGN6ROKKqaqshRy0VjyW7d5TaMw8IFlw/lxbg7BzfgHWnJpCJK9HKUhfgyNN2oxNZIlHQ27qNoX5M/GHvSEmoNjT7U8h85urhWxUgSvKF0R0NNDY1SJsaTnfs3o3THrocbTyHwpGj3Iw1A0nxd+GgvXg59MLcONV8lV aws-key
+    # Hinterlegt den öffentlichen SSH-Schlüssel, um den Zugriff auf die Instanz via SSH zu ermöglichen.
+
+ssh_pwauth: false
+# Deaktiviert die Möglichkeit, sich per Passwort über SSH anzumelden.
+
+disable_root: false
+# Ermöglicht den Root-Benutzer; der Root-Account ist nicht deaktiviert.
+
+package_update: true
+# Aktualisiert die Paketlisten, bevor weitere Pakete installiert werden.
+
+packages:
+  - curl
+  - wget
+  # Installiert die Pakete "curl" und "wget" auf der Instanz.
